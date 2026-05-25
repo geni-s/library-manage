@@ -1,0 +1,38 @@
+body{
+    color: aqua;
+    background-color: rgb(47, 33, 36);
+    
+
+}
+
+#bookContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bookCard{
+    background-color: #3d2727;
+    border: 2px solid #8fbc8f;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+}
+
+.bookCard h2{
+    color: #8fbc8f;
+}
+
+.bookCard p{
+    margin: 10px 0;
+}
+
+.borrow{
+   background-color: #8fbc8f;
+    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
