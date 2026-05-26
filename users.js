@@ -42,6 +42,9 @@ querySnapshot.forEach((doc) => {
           <p>${data.borrowedBy}</p>
 
           <p>${data.email}</p>
+         <button id="return">Return book</button>
+          
+        
 
        </div>
 
