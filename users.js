@@ -44,6 +44,9 @@ querySnapshot.forEach((doc) => {
           <p>${data.borrowedBy}</p>
 
           <p>${data.email}</p>
+          <p>Date: ${data.date}</p>
+
+          <p>Time: ${data.time}</p>
          <button class="returnb" onclick="returnb('${doc.id}','${data.bookId}')">
               Return
             </button>

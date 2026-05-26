@@ -98,6 +98,7 @@ filteredBooks.forEach((item) => {
         
 
             <p>Category: ${item.category}</p>
+       
          <button class="borrow" onclick="borrow('${item.id}','${item.book}',${item.quantity})">
            Borrow
          </button>
@@ -126,7 +127,10 @@ window.borrow = async function(id, bookName, quantity)
 
         borrowedBy: userName,
 
-        email: userEmail
+        email: userEmail,
+        date: new Date().toLocaleDateString(),
+
+        time: new Date().toLocaleTimeString()
 
     });
      const newQuantity = Math.max(0, quantity - 1);

@@ -19,6 +19,7 @@ search.addEventListener("click", () => {
    localStorage.setItem("author", author);
    localStorage.setItem("book", book);
    localStorage.setItem("category", category);
+   
 
    window.location.href = "showbook.html";
 
