@@ -56,6 +56,8 @@ Used to store:
 
 # ⚡ How To Run The Project
 
+-U can access it here -  https://magnificent-palmier-d0193f.netlify.app/
+
 ## 1️⃣ Clone Repository
 
 ```bash
