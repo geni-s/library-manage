@@ -31,7 +31,7 @@ login.addEventListener("click", async () => {
     const password=document.getElementById("password").value;
     if(email==""||password=="")
     {
-      alert("chutiya hai kya dal naaaa saleee");
+      alert("Dont submit empty");
       return;
     }
     
@@ -55,7 +55,7 @@ querySnapshot.forEach((doc) => {
 
 if(found)
 {
-    window.location.href = "borrowbook.html";
+    window.location.href = "afterlogin.html";
 }
 else
 {
