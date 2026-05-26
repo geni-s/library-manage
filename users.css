@@ -48,7 +48,7 @@ h1{
 .card p{
     margin: 5px 0;
 }
-#return{
+.returnb{
     background-color: #91a291;
     
     border: none;
@@ -56,6 +56,6 @@ h1{
     border-radius: 10px;
     cursor: pointer;
 }
-#return:hover{
+.returnb:hover{
     background-color: #7f957f;
 }

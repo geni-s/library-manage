@@ -6,7 +6,9 @@ import {
   getDocs,
   addDoc,
   updateDoc,
-  doc
+  doc,
+  getDoc,
+  deleteDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -42,7 +44,9 @@ querySnapshot.forEach((doc) => {
           <p>${data.borrowedBy}</p>
 
           <p>${data.email}</p>
-         <button id="return">Return book</button>
+         <button class="returnb" onclick="returnb('${doc.id}','${data.bookId}')">
+              Return
+            </button>
           
         
 
@@ -50,3 +54,46 @@ querySnapshot.forEach((doc) => {
 
     `;
 });
+window.returnb = async function(id, bookId){
+
+    try{
+
+        if(!bookId){
+            alert("Old borrowed book data found");
+            return;
+        }
+
+        const bookRef = doc(db, "books", bookId);
+
+        const snap = await getDoc(bookRef);
+
+        if(!snap.exists()){
+            alert("Book not found");
+            return;
+        }
+
+        const currentQuantity = snap.data().quantity;
+
+        await updateDoc(bookRef, {
+
+            quantity: currentQuantity + 1
+
+        });
+
+        await deleteDoc(doc(db, "borrowedBooks", id));
+
+        alert("Book Returned");
+
+        location.reload();
+
+    }
+    
+    catch(error){
+
+        console.log(error);
+
+        alert("Something went wrong");
+
+    }
+
+}

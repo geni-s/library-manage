@@ -108,14 +108,20 @@ filteredBooks.forEach((item) => {
    });
 }
 getBooks();
+
 window.borrow = async function(id, bookName, quantity)
-{
+{   
+
+    if(quantity <= 0){
+    alert("Book Out Of Stock");
+    return;
+}
     const userName = localStorage.getItem("name");
 
     const userEmail = localStorage.getItem("email");
 
     await addDoc(collection(db, "borrowedBooks"), {
-
+        bookId: id,
         bookName: bookName,
 
         borrowedBy: userName,
