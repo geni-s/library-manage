@@ -9,7 +9,7 @@ login.addEventListener("click", () => {
      }
      else
     {
-        alert('chutiyeee mtlb kuch bhi krna hai tekooo')
+        alert('Wrong id and password')
     }
 
 
