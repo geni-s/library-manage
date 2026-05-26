@@ -55,7 +55,7 @@ querySnapshot.forEach((doc) => {
 
 if(found)
 {
-    window.location.href = "afterlogin.html";
+    window.location.href = "borrowbook.html";
 }
 else
 {
