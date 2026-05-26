@@ -18,4 +18,12 @@ users.addEventListener("click", () => {
 
     
 });
+const use= document.getElementById("use");
+use.addEventListener("click", () => {
+    
+         window.location.href = "use.html";
+   
 
+
+    
+});
