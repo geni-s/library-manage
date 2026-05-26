@@ -64,3 +64,10 @@ body{
     
 
 }
+
+#login:hover{
+    background-color: rgb(173, 164, 164);
+}
+#register:hover{
+     background-color: rgb(173, 164, 164);
+}

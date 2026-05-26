@@ -87,3 +87,9 @@ body{
     
     
 }
+#show:hover{
+ background-color: rgb(66, 51, 51);
+}
+#search:hover{
+ background-color: rgb(66, 51, 51);
+}

@@ -61,3 +61,11 @@ h1{
         width: 100%;
     }
 }
+
+#login:hover{
+   background-color: rgb(173, 164, 164);
+}
+#Admin:hover{
+     background-color: rgb(173, 164, 164);
+
+}
