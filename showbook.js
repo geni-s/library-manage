@@ -99,7 +99,7 @@ filteredBooks.forEach((item) => {
 
             <p>Category: ${item.category}</p>
        
-         <button class="borrow" onclick="borrow('${item.id}','${item.book}',${item.quantity})">
+         <button class="borrow" onclick='borrow("${item.id}",`${item.book}`,${item.quantity})'>
            Borrow
          </button>
 
