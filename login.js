@@ -24,13 +24,16 @@ const db = getFirestore(app);
 
 
 
+
 const login = document.getElementById("login");
 
 login.addEventListener("click", async () => {
+    loader.style.display = "flex";
     const email=document.getElementById("email").value;
     const password=document.getElementById("password").value;
     if(email==""||password=="")
     {
+       
       alert("Dont submit empty");
       return;
     }
@@ -58,7 +61,9 @@ if(found)
     window.location.href = "borrowbook.html";
 }
 else
+
 {
+    
     alert("Wrong email or password");
 }
 });

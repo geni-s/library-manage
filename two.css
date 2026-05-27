@@ -7,7 +7,7 @@ body{
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -15,7 +15,7 @@ body{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    filter: blur(3px);
+    filter: blur(1.5px);
     position: absolute;
     z-index: -1;
 }
@@ -39,10 +39,85 @@ button{
     transition: 0.3s;
     background-color: rgba(255,255,255,0.2);
     color: white;
-    backdrop-filter: blur(5px);
+    
 }
 
-button:hover{
-    transform: scale(1.05);
-    background-color: rgba(255,255,255,0.4);
+
+
+.sidebar{
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+   background: rgba(8,10,20,0.92);
+
+    
+
+    
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 30px;
+
+    gap: 18px;
+}
+
+.sidebar h2{
+    color: white;
+    font-size: 32px;
+    margin-left: 62px;
+    margin-bottom: 20px;
+
+    letter-spacing: 1px;
+}
+.sidebtn{
+    
+    
+
+   
+
+   
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.04);
+
+    color: rgba(255,255,255,0.88);
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+
+    
+}
+
+.sidebtn:hover{
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+}
+.sidebtn i{
+    font-size: 20px;
+    width: 25px;
+}
+
+h1{
+    color: rgb(216, 187, 187);
+    margin-left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    max-width: 900px;
+    text-align: center;
+
 }
