@@ -28,7 +28,7 @@ const db = getFirestore(app);
 const login = document.getElementById("login");
 
 login.addEventListener("click", async () => {
-    loader.style.display = "flex";
+    
     const email=document.getElementById("email").value;
     const password=document.getElementById("password").value;
     if(email==""||password=="")

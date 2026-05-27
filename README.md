@@ -1,4 +1,4 @@
-# Library Management System 📚
+# Library Management System 
 
 A simple and beginner-friendly Library Management System built using HTML, CSS, JavaScript, and Firebase.
 
@@ -6,9 +6,9 @@ This project allows admins to manage books while users can search, borrow books 
 
 ---
 
-# 🚀 Features
+# Features
 
-## 👨‍💼 Admin Features
+## Admin Features
 
 - Secure Admin Login using Firebase Authentication
 - Add New Books
@@ -19,7 +19,7 @@ This project allows admins to manage books while users can search, borrow books 
 
 ---
 
-## 👨‍🎓 User Features
+## User Features
 
 - Search Books
 - View Available Books
@@ -27,7 +27,7 @@ This project allows admins to manage books while users can search, borrow books 
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 - HTML
 - CSS
@@ -37,7 +37,7 @@ This project allows admins to manage books while users can search, borrow books 
 
 ---
 
-# 🔥 Firebase Features Used
+# Firebase Features Used
 
 ## Firebase Authentication
 
@@ -54,7 +54,7 @@ Used to store:
 ---
 
 
-# ⚡ How To Run The Project
+#  How To Run The Project
 
 -U can access it here -  https://magnificent-palmier-d0193f.netlify.app/
 
@@ -82,7 +82,7 @@ Open `home.html`
 
 ---
 
-# 🔐 Admin Login Credentials
+#  Admin Login Credentials
 
 ```txt
 Email: admin@gmail.com
@@ -93,7 +93,7 @@ Password: adminhumai
 
 
 
-# 📚 How The System Works
+#  How The System Works
 
 ## ➕ Add Book
 
@@ -104,7 +104,7 @@ Password: adminhumai
 
 ## 🔍 Search Book
 
-- User searches by book name or author
+- User searches by book name or author or by choosing 
 - Matching books are displayed instantly
 
 ---
@@ -130,13 +130,5 @@ Password: adminhumai
 - User clicks Return button
 - Quantity increases automatically
 - Borrowed entry gets deleted
-
----
-
-
-
-# 👨‍💻 Developer
-
-Developed by **Genius Jareda**
 
 ---
