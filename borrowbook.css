@@ -93,3 +93,21 @@ body{
 #search:hover{
  background-color: rgb(66, 51, 51);
 }
+select{
+
+    width: 420px;
+    height: 38px;
+    color: rgb(47, 58, 58);
+    border-radius: 25px;
+    padding-left: 7px;
+    font-size: 13px;
+
+    outline: none;
+
+    background-color: white;
+
+  
+    
+
+    cursor: pointer;
+}
