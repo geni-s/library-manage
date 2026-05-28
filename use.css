@@ -48,3 +48,14 @@ h1{
 .card p{
     margin: 5px 0;
 }
+.remove{
+    background-color: #91a291;
+    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.remove:hover{
+    background-color: #7f957f;
+}

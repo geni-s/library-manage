@@ -3,7 +3,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import {
   getFirestore,
   collection,
-  getDocs
+  getDocs,
+  deleteDoc,
+  doc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -18,19 +20,40 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const container = document.getElementById("container");
 const querySnapshot = await getDocs(collection(db, "users"));
-querySnapshot.forEach((doc) => {
+querySnapshot.forEach((docsnap) => {
 
-    const data = doc.data();
+    const data = docsnap.data();
 
     container.innerHTML += `
 
-       <div class="card">
+       <div class="card" id="${docsnap.id}">
 
           <h2>${data.name}</h2>
 
           <p>${data.email}</p>
+          <button class="remove" onclick="remove('${docsnap.id}')">
+              Remove User
+            </button>
 
        </div>
 
     `;
 });
+window.remove = async function(id) {
+
+   try {
+
+      await deleteDoc(doc(db, "users", id));
+
+      document.getElementById(id).remove();
+
+      alert("User deleted successfully");
+
+   } catch(error) {
+
+      console.log(error);
+      alert("Error deleting user");
+
+   }
+
+}
