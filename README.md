@@ -16,14 +16,15 @@ This project allows admins to manage books while users can search, borrow books 
 - View All Books
 - Return Books
 - Track Borrowed Books
+- Can Delete Users
 
 ---
 
 ## User Features
 
-- Search Books
 - View Available Books
 - Borrow Books
+- search books by filters
 
 ---
 
@@ -56,7 +57,7 @@ Used to store:
 
 #  How To Run The Project
 
--U can access it here -  https://magnificent-palmier-d0193f.netlify.app/
+U can access it here -  https://magnificent-palmier-d0193f.netlify.app/
 
 ## 1️⃣ Clone Repository
 
@@ -78,7 +79,7 @@ Use Live Server Extension
 
 OR
 
-Open `home.html`
+Open `index.html`
 
 ---
 
